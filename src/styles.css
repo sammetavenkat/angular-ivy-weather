@@ -1,0 +1,7 @@
+body {
+    background-color: lighten(#C8DAE6, 10%);
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}

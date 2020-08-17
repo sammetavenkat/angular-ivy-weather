@@ -1,0 +1,46 @@
+<div class="containt">
+	<div class="main-header-card">
+
+	</div>
+
+	<div class="row main-body-cards">
+
+<ng-container *ngFor="let card of CardArray; let i = index ;">
+   <div class="col-12 col-lg-4 col-md-6 col-sm-6 col-xs-12" >
+			<card (delete)="deleteThisCard($event)" [time]="card['time']" [cityName]="card['name']" [id]="i+''"></card>
+		</div>
+</ng-container>
+<div class="addCard" (click)="openPopUp()">
+  <img  src="https://img.icons8.com/cotton/2x/add--v2.png" class="Add-icon">
+    <div>Add New City</div>
+</div>
+
+	</div>
+
+	<div class="main-footer-card">
+
+	</div>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+  <div class="row">
+    <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+     <div class="form-group">
+    <label for="exampleInputEmail1">City name</label>
+    <input type="text" [(ngModel)]="CityName" class="form-control" id="CityName" aria-describedby="emailHelp" placeholder="Enter city name">
+    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+  </div>
+    </div>
+    <div class="col-4 col-lg-4 col-md-4 col-sm-4 col-xs-4" >
+       <button style="width:100%" class="btn btn-outline-primary btn-sm" (click)="addNewCard()"> Add </button>
+    </div>
+    <div class="col-4 col-lg-4 col-md-4 col-sm-4 col-xs-4" >
+       <button style="width:100%" class="btn btn-outline-danger btn-sm" (click)="closePopUp()"> Close </button>
+    </div>
+  </div>
+
+  </div>
+
+</div>
+
+</div>
+
