@@ -20,9 +20,9 @@
            (blur)="upDateCityName()"
           />
 				</h3>
-					<i class="fa fa-edit edit-icon" *ngIf="!this.showEditMode" (click)="onEditClick()"></i>
-					<i class="	fa fa-save edit-icon" *ngIf="this.showEditMode" (click)="onSave()"></i>
-					<i class="fa fa-trash-o delete-icon"  (click)="deleteCard()"></i>
+					<i class="fa fa-edit edit-icon" title="Save" *ngIf="!this.showEditMode" (click)="onEditClick()"></i>
+					<i class="	fa fa-save edit-icon" title="Edit" *ngIf="this.showEditMode" (click)="onSave()"></i>
+					<i class="fa fa-trash-o delete-icon" title="Delete" (click)="deleteCard()"></i>
 			</div>
 
 			<ng-container *ngIf="!showError">
