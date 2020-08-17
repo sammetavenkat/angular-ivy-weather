@@ -1,5 +1,5 @@
 {
-    "/api/*": {
+    "/data/*": {
         "target": "https://api.openweathermap.org/",
         "secure": false,
         "logLevel": "debug"

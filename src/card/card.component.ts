@@ -16,7 +16,7 @@ export class CardComponent implements OnInit {
   public ShowLoading=true;
   public showError=true;
   public errorMessage="";
-  private BasicURL='https://api.openweathermap.org/data/2.5/weather?q='; 
+  private BasicURL='https://angular-ivy-weather.stackblitz.io/data/2.5/weather?q='; 
 
   public name="";
   public icon="";
