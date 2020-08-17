@@ -16,7 +16,7 @@ export class CardComponent implements OnInit {
   public ShowLoading=true;
   public showError=true;
   public errorMessage="";
-  private BasicURL='/data/2.5/weather?q='; 
+  private BasicURL='https://api.openweathermap.org/data/2.5/weather?q='; 
 
   public name="";
   public icon="";
@@ -40,7 +40,7 @@ export class CardComponent implements OnInit {
      if( this.cityName!=''){
       this.loadWeather();
      }
-     //setInterval(()=>{this.loadWeather()}, 30000);
+     setInterval(()=>{this.loadWeather()}, 30000);
    }
   
   async loadWeather(){
